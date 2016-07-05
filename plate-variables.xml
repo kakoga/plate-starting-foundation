@@ -5,7 +5,7 @@
    <created_by>Zesty</created_by>
    <kitchen>barebones</kitchen>
    <variables>
-      <color name="body-bg" name_friendly="Body Background Color">
+      <color name="body-bg-color" name_friendly="Body Background Color">
          <category>1</category>
          <description>The primary background for elements</description>
          <sort>5</sort>
