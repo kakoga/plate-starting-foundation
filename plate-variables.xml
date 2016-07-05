@@ -9,9 +9,12 @@
          <category>1</category>
          <description>The primary background for elements</description>
          <sort>5</sort>
-         <edit_in_content>1</edit_in_content>
+         <edit_in_content>0</edit_in_content>
          <locked>0</locked>
          <value><![CDATA[#ffffff]]></value>
+      </color>
+      <color name="accent-color" name_friendly="Body Background Color">
+         <category>1</category>
       </color>
        </variables>
 </plate_variables>
