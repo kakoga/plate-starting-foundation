@@ -13,8 +13,21 @@
          <locked>0</locked>
          <value><![CDATA[#ffffff]]></value>
       </color>
-      <color name="accent-color" name_friendly="Body Background Color">
+      <color name="accent-color" name_friendly="Accent Color">
          <category>1</category>
+         <description>Not used in template</description>
+         <sort>5</sort>
+         <edit_in_content>0</edit_in_content>
+         <locked>0</locked>
+         <value><![CDATA[#ffffff]]></value>
       </color>
-       </variables>
+      <text name="mapwidth" name_friendly="Map Width">
+         <category>1</category>
+         <description>Controls map width</description>
+         <sort>100</sort>
+         <edit_in_content>0</edit_in_content>
+         <locked>0</locked>
+         <value><![CDATA[1100px]></value>
+      </text>
+    </variables>
 </plate_variables>
