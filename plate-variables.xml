@@ -21,7 +21,7 @@
          <locked>0</locked>
          <value><![CDATA[#ffffff]]></value>
       </color>
-      <text name="mapwidth" name_friendly="Map Width">
+      <text name="map-width" name_friendly="Map Width">
          <category>1</category>
          <description>Controls map width</description>
          <sort>100</sort>
