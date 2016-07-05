@@ -51,8 +51,8 @@
 					<content><![CDATA[<p>My Biography.</p>]]></content>
 				</item>
 			</items>
-			</templateset>
-			
+		</templateset>
+
 			<templateset name="contact" name_friendly="Contact" view="contact">
 				<!-- there are 3 types of content set types, Templatesets (Single Page), Pagesets (Multi-page like artciles), and Datasets (tables or supplementatl data). The hompage is a single page, so it is a templateset. -->
 				<fields>
