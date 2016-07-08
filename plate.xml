@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone='yes'?>
 <plate>
 	<!-- head -->
-	<!-- The head is very similair to the head you would set in a typical website. Getting starting with JQuery or a Google font, this is the spot to do it -->
+	<!-- The head is very similair to the head you would set in a typical website.
+	If you're getting started with jQuery or a Google font, this is the spot to do it -->
 	<head>
 		<doctype>html5</doctype>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -10,11 +11,11 @@
 	</head>
 
 
-	<!-- The base content congiuration is declared here. We call them ingredients. When building a template you need at least a homepage, but can add other content Ingredients as well. Content ingredients can also be added later through the sitemap tool.-->
+	<!-- The base content configuration is declared here. We call them ingredients. When building a template you need at least a homepage, but other ingredients can be added as well. Content ingredients can also be added later through the sitemap tool.-->
 	<ingredients>
 
 		<templateset name="homepage" name_friendly="Homepage" view="homepage">
-			<!-- there are 3 types of content set types, Templatesets (Single Page), Pagesets (Multi-page like artciles), and Datasets (tables or supplementatl data). The hompage is a single page, so it is a templateset. -->
+			<!-- There are 3 types of content set types: Templatesets - Single Page; Pagesets - Multi-page like articles; and Datasets - tables or supplemental data. Since the homepage is  single page, it is a templateset. -->
 			<fields>
 				<text name="title" name_friendly="Lead in Title" required="1" />
 				<text name="subtitle" name_friendly="Subtitle" />
@@ -22,12 +23,12 @@
 				<images name="image" name_friendly="Main Image" limit="1" />
 			</fields>
 
-			<!-- each content set needs to be preloaded with content, you can see that the xml tag names below match the field names above-->
+			<!-- Each content set needs to be preloaded with content. You can see that the XML tag names below match the field names above-->
 			<items>
-				<item link_title="Homepage" path_part="zesty_home"> <!-- the path part zesty_home sets the homepage-->
+				<item link_title="Homepage" path_part="zesty_home"> <!-- path_part sets zesty_home as the homepage-->
 					<title><![CDATA[Starting Foundation]]></title>
 					<subtitle><![CDATA[subtitle]]></subtitle>
-					<!-- wrapping content in CDATA is neccesary -->
+					<!-- Wrapping content in CDATA is neccesary -->
 					<content><![CDATA[<p>Stop coding non-responsive sites. Let users view sites from anywhere.</p>]]></content>
 					<image><![CDATA[https://raw.githubusercontent.com/zesty-io/plate-starting-foundation/master/shield.png]]></image>
 				</item>
@@ -35,26 +36,26 @@
 		</templateset>
 
 		<templateset name="about" name_friendly="About" view="about">
-			<!-- there are 3 types of content set types, Templatesets (Single Page), Pagesets (Multi-page like artciles), and Datasets (tables or supplementatl data). The hompage is a single page, so it is a templateset. -->
+			<!-- There are 3 types of content set types: Templatesets - Single Page; Pagesets - Multi-page like articles; and Datasets - tables or supplemental data. Since the homepage is  single page, it is a templateset. -->
 			<fields>
 				<text name="title" name_friendly="Lead in Title" required="1" />
 				<images name="image" name_friendly="Main Image" limit="1" />
 				<wysiwyg_advanced name="content" name_friendly="Intro Text" />
 			</fields>
 
-			<!-- each content set needs to be preloaded with content, you can see that the xml tag names below match the field names above-->
+			<!-- Each content set needs to be preloaded with content. You can see that the XML tag names below match the field names above-->
 			<items>
 				<item link_title="About" path_part="about"> <!-- the path part zesty_home sets the homepage-->
 					<title><![CDATA[About Page]]></title>
 					<image><![CDATA[https://raw.githubusercontent.com/zesty-io/plate-starting-foundation/master/shield.png]]></image>
-					<!-- wrapping content in CDATA is neccesary -->
+					<!-- Wrapping content in CDATA is neccesary -->
 					<content><![CDATA[<p>My Biography.</p>]]></content>
 				</item>
 			</items>
 		</templateset>
 
 			<templateset name="contact" name_friendly="Contact" view="contact">
-				<!-- there are 3 types of content set types, Templatesets (Single Page), Pagesets (Multi-page like artciles), and Datasets (tables or supplementatl data). The hompage is a single page, so it is a templateset. -->
+				<!-- There are 3 types of content set types: Templatesets - Single Page; Pagesets - Multi-page like articles; and Datasets - tables or supplemental data. Since the homepage is  single page, it is a templateset. -->
 				<fields>
 					<text name="title" name_friendly="Lead in Title" required="1" />
 					<images name="image" name_friendly="Main Image" limit="1" />
@@ -62,12 +63,12 @@
 					<text name="email" name_friendly="contact email for users" />
 					<textarea name="map" name_friendly="add map of your address" />
 				</fields>
-			<!-- each content set needs to be preloaded with content, you can see that the xml tag names below match the field names above-->
+			<!-- Each content set needs to be preloaded with content. You can see that the XML tag names below match the field names above-->
 			<items>
 				<item link_title="Contact" path_part="contact"> <!-- the path part zesty_home sets the homepage-->
 					<title><![CDATA[Contact Page]]></title>
 					<image><![CDATA[https://raw.githubusercontent.com/zesty-io/plate-starting-foundation/master/shield.png]]></image>
-					<!-- wrapping content in CDATA is neccesary -->
+					<!-- Wrapping content in CDATA is neccesary -->
 					<content><![CDATA[<p>My contact info.</p>]]></content>
 					<email><![CDATA[myemailaddress@mysite.com<]]></email>
 					<map><![CDATA[<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.8608430755035!2d-117.16123494969524!3d32.716325280897074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d954a79ef0967f%3A0x74a5fd5ef322db6f!2sZesty.io!5e0!3m2!1sen!2sus!4v1467745884267" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>]]>
@@ -76,7 +77,7 @@
 			</items>
 		</templateset>
 		<templateset name="portfolio" name_friendly="Portfolio" view="portfolio">
-			<!-- there are 3 types of content set types, Templatesets (Single Page), Pagesets (Multi-page like artciles), and Datasets (tables or supplementatl data). The hompage is a single page, so it is a templateset. -->
+			<!-- There are 3 types of content set types: Templatesets - Single Page; Pagesets - Multi-page like articles; and Datasets - tables or supplemental data. Since the homepage is  single page, it is a templateset. -->
 			<fields>
 				<text name="title" name_friendly="Lead in Title" required="1" />
 				<images name="image" name_friendly="Main Image" limit="1" />
@@ -84,12 +85,12 @@
 				<text name="portfolio-title" name_friendly="your portfolio title here" />
 				<textarea name="description" name_friendly="add a description of your portfolio here" />
 			</fields>
-		<!-- each content set needs to be preloaded with content, you can see that the xml tag names below match the field names above-->
+		<!-- Each content set needs to be preloaded with content. You can see that the XML tag names below match the field names above-->
 		<items>
 			<item link_title="Portfolio" path_part="portfolio"> <!-- the path part zesty_home sets the homepage-->
 				<title><![CDATA[Portfolio Page]]></title>
 				<image><![CDATA[https://raw.githubusercontent.com/zesty-io/plate-starting-foundation/master/shield.png]]></image>
-				<!-- wrapping content in CDATA is neccesary -->
+				<!-- Wrapping content in CDATA is neccesary -->
 				<content><![CDATA[<p>My portfolio brief</p>]]></content>
 				<portfolio-title><![CDATA[my portfolio title<]]></portfolio-title>
 				<description><![CDATA[this is a portfolio for my x hobbie]]>
@@ -100,9 +101,10 @@
 
 	</ingredients>
 
-	<!-- clippings -->
-	<!-- clippings are globally accessible content. Site logo, and other template consistent data between pages are great candidates for clippings. By setting clippings, content editors can control the "template" parts of your template. Setting background images or seasonal ad images here is not uncommon. -->
-	<!-- clippings follow the same pattern as content ingredients -->
+	<!-- Clippings -->
+
+	<!-- Clippings are globally accessible content. For example, site logo, background images, seasonal ad images, and other template consistent data between pages are great candidates for clippings. By setting clippings, content editors can control the consistent parts of your template. -->
+	<!-- Clippings follow the same pattern as content ingredients. You can see the matching XML tags and field names below. -->
 	<clippings>
 		<text name="site_name" name_friendly="Site Name" required="1">
 			<![CDATA[Starting Foundation]]>
