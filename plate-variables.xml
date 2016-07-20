@@ -1,11 +1,12 @@
 <!-- Plate-variables describe how LESS variables are constructed. They create placeholder content and show which types of variables you have access to.
-Each template has four default variables: dropdown, color, text, and image. The variables listed below will help you get started. Variables will remain consistent on a page-by-page basis. For example, you can have 2px of padding on your homepage, but 5px of padding on your About page. -->
+Each template has 11 default variables: body colors & spacing, typography, responsive grid, HTML elements, links, navigation, sidebar, buttons, interactive elements, forms, and UI styling.
+The variables listed below will help you get started. Variables will remain consistent on a page-by-page basis. For example, you can have 2px of padding on your homepage, but 5px of padding on your About page. -->
 
 <?xml version="1.0" encoding="UTF-8"?>
 <plate_variables>
    <created_date>2016-06-08</created_date>
    <plate>Zesty.io Starter Foundation</plate>
-   <created_by>Zesty</created_by>
+   <created_by>Zesty.io</created_by>
    <kitchen>barebones</kitchen>
    <variables>
       <color name="body-bg-color" name_friendly="Body Background Color">

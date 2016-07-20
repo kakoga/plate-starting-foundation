@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone='yes'?>
+<!-- When a web property is created using a framework, Zesty.io looks at the plate.xml file to build the Content tab. This plate.xml will instruct Zesty.io which pages, page groups, data sets and fields the Content section should start with.   -->
 <plate>
-	<!-- head -->
-	<!-- The head is very similair to the head you would set in a typical website.
-	If you're getting started with jQuery or a Google font, this is the spot to do it -->
+	<!-- This head is very similar to the <head> you would set in a typical website.
+	If you're getting started with jQuery or a Google font, this is the spot to inclue those link and script tags. There are additional tags Zesty.io will add to every page <head> automatically, such as the title, meta description and open graph tags. -->
 	<head>
 		<doctype>html5</doctype>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -10,21 +10,25 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"/>
 	</head>
 
-
 	<!-- The base content configuration is declared here. We call them ingredients. When building a template you need at least a homepage, but other ingredients can be added as well. Content ingredients can also be added later through the sitemap tool.-->
-	<ingredients>
 
+	<!-- The initial Content tab configuration is declared here. We call them ingredients. When building a template you need at least a homepage templateset, but other ingredients can be added as well. Content ingredients can also be added and edited anytime through the sitemap tool or through the Config tab.-->
+	<!-- There are 3 content types:
+	1.Templatesets - a single page e.g. homepage
+	2. Pagesets - Multiple pages that share an HTML view e.g. articles
+	3. Datasets - Groups of uniform content items used as elements on a page. e.g. images for a slider or Q-and-A's for an FAQ page. -->
+	<ingredients>
+		<!--Since the homepage is a single page, it is a templateset.   -->
 		<templateset name="homepage" name_friendly="Homepage" view="homepage">
-			<!-- There are 3 types of content set types: Templatesets - Single Page; Pagesets - Multi-page like articles; and Datasets - tables or supplemental data. Since the homepage is  single page, it is a templateset. -->
 			<fields>
 				<text name="title" name_friendly="Lead in Title" required="1" />
 				<text name="subtitle" name_friendly="Subtitle" />
 				<wysiwyg_advanced name="content" name_friendly="Intro Text" />
 				<images name="image" name_friendly="Main Image" limit="1" />
 			</fields>
-
 			<!-- Each content set needs to be preloaded with content. You can see that the XML tag names below match the field names above-->
 			<items>
+				<!-- path_part sets zesty_home as the homepage -->
 				<item link_title="Homepage" path_part="zesty_home"> <!-- path_part sets zesty_home as the homepage-->
 					<title><![CDATA[Starting Foundation]]></title>
 					<subtitle><![CDATA[subtitle]]></subtitle>
@@ -35,15 +39,12 @@
 			</items>
 		</templateset>
 
-		<templateset name="about" name_friendly="About" view="about">
-			<!-- There are 3 types of content set types: Templatesets - Single Page; Pagesets - Multi-page like articles; and Datasets - tables or supplemental data. Since the homepage is  single page, it is a templateset. -->
+		<templateset name="about" name_friendly="About" view="about.tpl">
 			<fields>
 				<text name="title" name_friendly="Lead in Title" required="1" />
 				<images name="image" name_friendly="Main Image" limit="1" />
 				<wysiwyg_advanced name="content" name_friendly="Intro Text" />
 			</fields>
-
-			<!-- Each content set needs to be preloaded with content. You can see that the XML tag names below match the field names above-->
 			<items>
 				<item link_title="About" path_part="about"> <!-- the path part zesty_home sets the homepage-->
 					<title><![CDATA[About Page]]></title>
@@ -55,7 +56,7 @@
 		</templateset>
 
 			<templateset name="contact" name_friendly="Contact" view="contact">
-				<!-- There are 3 types of content set types: Templatesets - Single Page; Pagesets - Multi-page like articles; and Datasets - tables or supplemental data. Since the homepage is  single page, it is a templateset. -->
+
 				<fields>
 					<text name="title" name_friendly="Lead in Title" required="1" />
 					<images name="image" name_friendly="Main Image" limit="1" />
@@ -63,7 +64,7 @@
 					<text name="email" name_friendly="contact email for users" />
 					<textarea name="map" name_friendly="add map of your address" />
 				</fields>
-			<!-- Each content set needs to be preloaded with content. You can see that the XML tag names below match the field names above-->
+
 			<items>
 				<item link_title="Contact" path_part="contact"> <!-- the path part zesty_home sets the homepage-->
 					<title><![CDATA[Contact Page]]></title>
@@ -77,7 +78,7 @@
 			</items>
 		</templateset>
 		<templateset name="portfolio" name_friendly="Portfolio" view="portfolio">
-			<!-- There are 3 types of content set types: Templatesets - Single Page; Pagesets - Multi-page like articles; and Datasets - tables or supplemental data. Since the homepage is  single page, it is a templateset. -->
+
 			<fields>
 				<text name="title" name_friendly="Lead in Title" required="1" />
 				<images name="image" name_friendly="Main Image" limit="1" />
@@ -85,7 +86,7 @@
 				<text name="portfolio-title" name_friendly="your portfolio title here" />
 				<textarea name="description" name_friendly="add a description of your portfolio here" />
 			</fields>
-		<!-- Each content set needs to be preloaded with content. You can see that the XML tag names below match the field names above-->
+
 		<items>
 			<item link_title="Portfolio" path_part="portfolio"> <!-- the path part zesty_home sets the homepage-->
 				<title><![CDATA[Portfolio Page]]></title>
